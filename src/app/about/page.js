@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div>about</div>
+    <div clessName=" text-center text-red-500">about</div>
   )
 }
 
