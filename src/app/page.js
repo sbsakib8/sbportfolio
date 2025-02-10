@@ -1,9 +1,9 @@
-import Navber from "@/component/navber/Navber";
+import Home from './(page)/home/page';
 
-export default function Home() {
+export default function page() {
   return (
     <div>
-    <h1>home</h1>
+     <Home/>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function Navber({ children }) {
     ];
 
     return (
-        <div className="flex h-screen w-full">
+        <div className="flex h-screen w-full ">
             {/* Sidebar */}
             <div className={`${open ? 'w-72' : 'w-16'} duration-500 h-full bg-[#222222] fixed left-0 top-0 px-3`}>
                 <div className='relative right-0 -mr-8 py-3 flex justify-end'>
@@ -28,14 +28,14 @@ function Navber({ children }) {
                     />
                 </div>
                 <div className={`${open ? 'block' : 'hidden'} text-center -mt-7 duration-500 cursor-pointer`}>
-                    <Link className='text-[28px] leading-7 text-red-500' href='/'>SB</Link>
+                    <Link className="bg-gradient-to-r from-[#0ef] to-violet-500 bg-clip-text text-5xl font-extrabold text-transparent" href='/'>SB</Link>
                 </div>
                 <div className='flex flex-col mt-20 gap-5'>
                     {menus.map((item, index) => (
                         <Link 
                             key={index} 
                             href={item.link} 
-                            className={`${pathname === item.link ? 'bg-red-700 rotate-[360deg] delay-300 duration-500 ': null} group flex items-center text-white gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
+                            className={`${pathname === item.link ? 'bg-[#0ef] text-black rotate-[360deg] text-[23px] duration-500 ': null} group flex items-center  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
                         >
                             <p className='text-[24px]'>{item.icon}</p>
                             <p style={{ transitionDelay: `${index + 3}00ms` }} className={`duration-500 ${!open && 'opacity-0 translate-x-28 overflow-hidden'}`}>
