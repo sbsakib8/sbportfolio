@@ -37,3 +37,11 @@ body{
 .media_icon{
     @apply  w-8 h-8 border-1 border-primary rounded-full  text-primary hover:bg-primary hover:text-black  hover:shadow-lgs transition-all duration-500;
 }
+/* media component end */
+/* resume section start */
+.button_components{
+    @apply flex flex-col gap-2 space-y-3 mt-10;
+}
+.button_router{
+  @apply bg-gray-700 w-[300px] rounded-full cursor-pointer;
+}
