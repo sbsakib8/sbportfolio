@@ -43,5 +43,12 @@ body{
     @apply flex flex-col gap-2 space-y-3 mt-10;
 }
 .button_router{
-  @apply bg-gray-700 w-[300px] rounded-full cursor-pointer;
+  @apply bg-gray-700 w-[300px] rounded-full cursor-pointer hover:bg-primary hover:text-black transition-all duration-300 hover:shadow-lgs;
+}
+
+.resume_title{
+    @apply  text-center text-[30px] font-bold ;
+}
+.rerume_paragraph{
+    @apply  max-w-[400px] lg:max-w-[450px] text-center text-wrap text-[20px] leading-[30px];
 }

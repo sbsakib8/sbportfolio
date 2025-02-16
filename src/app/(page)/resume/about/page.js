@@ -1,11 +1,11 @@
 
 function Aboutmy() {
   return (
-    <div className=" p-9">
+    <div className=" py-3 px-6 lg:p-7">
 
-      <div className=" flex flex-col justify-center items-center" >
-      <h3>About me</h3>
-      <p className=" text-wrap">
+      <div className=" flex flex-col justify-center  items-center" >
+      <h3 className='resume_title'>About me</h3>
+      <p className="rerume_paragraph">
         dolor sit amet, consectetur adipiscing elit. Sed vel dapibus justo, et ullamcorper metus. Nullam varius, mauris ac dignissim feugiat, justo lectus sagittis velit, sed consectetur urna enim non ex. Sed vel convallis neque, sit amet placerat nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dapibus justo, et ullamcorper metus. Nullam varius, mauris ac dignissim feugiat, justo 
       </p>
       </div>
