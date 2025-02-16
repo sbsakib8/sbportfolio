@@ -8,6 +8,22 @@
     --shadow-lgs: 0 0 12px #0ef;
 
 }
+/*============== custom scroll bar============ */
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track{
+    background-color: chocolate ;
+}
+::-webkit-scrollbar-thumb{
+    background: #0ef;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rosybrown;
+}
+/*============== custom scroll bar end============ */
+
+
 body{
     @apply font-poppins;
 }
