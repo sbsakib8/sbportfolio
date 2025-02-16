@@ -49,6 +49,12 @@ body{
 .resume_title{
     @apply  text-center text-[30px] font-bold ;
 }
-.rerume_paragraph{
-    @apply  max-w-[400px] lg:max-w-[450px] text-center text-wrap text-[20px] leading-[30px];
+.resume_paragraph{
+    @apply  max-w-[400px] lg:max-w-[570px] text-center text-wrap text-[20px] leading-[30px] text-gray-400;
+}
+.resume_about_p{
+    @apply text-[23px] text-primary  py-2 ;
+}
+.resume_about_span{
+    @apply  text-[17px] text-gray-300;
 }

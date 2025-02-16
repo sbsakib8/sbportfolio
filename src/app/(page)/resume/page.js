@@ -1,8 +1,10 @@
+import Aboutmy from "./about/page"
+
 
 function Resume({children}) {
   return (
-    <section className="flex  gap-10">
-      <div>sakib</div>
+    <section className="">
+      <Aboutmy/>
       <div>
         {children}
       </div>
