@@ -117,7 +117,7 @@ const UI = [
 function Skill() {
   return (
     <div className=" py-3  lg:px-7">
-      <h4 className='resume_title'>My Skills</h4>
+      <h4 className='resume_title '>My Skills</h4>
       <p className="resume_paragraph">lorem
         ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus,
         lectus sed consectetur porttitor, urna velit bibendum velit, vel
@@ -129,7 +129,7 @@ function Skill() {
       </p>
 {/* frontend skils div */}
       <div className="shadow-md shadow-gray-400 py-3 mt-5">
-        <h5 className='resume_title'>Frontend</h5>
+        <h5 className='resume_title '>Frontend</h5>
         <ul className=" flex flex-wrap gap-5 px-4 py-3 ">
           {
             Frontend.map((skill)=>{
@@ -148,7 +148,7 @@ function Skill() {
       </div>
 {/* backend skils div */}
       <div className="shadow-md shadow-gray-400 py-3 mt-5">
-        <h5 className='resume_title'>backend</h5>
+        <h5 className='resume_title text-primary'>backend</h5>
         <ul className=" flex flex-wrap gap-5 px-4 py-3 ">
           {
             Backend.map((skill)=>{
@@ -168,13 +168,13 @@ function Skill() {
 
       {/* ui div */}
       <div className="shadow-md shadow-gray-400 py-3 mt-5">
-        <h5 className='resume_title'>UI Design</h5>
+        <h5 className='resume_title '>UI Design</h5>
         <ul className=" flex flex-wrap gap-5 px-4 py-3 ">
           {
             UI.map((skill)=>{
               return (
                
-                 <li className=" w-[130px] h-[100px] bg-gray-400 flex flex-col justify-center rounded-lg items-center shadow-lgs cursor-pointer hover:animate-ping transition-all duration-200 " key={skill.id} >
+                 <li className=" w-[130px] h-[100px]  flex flex-col justify-center rounded-lg items-center shadow-lgs cursor-pointer hover:animate-ping transition-all duration-200 bg-gray-400 " key={skill.id} >
                  <p className=" text-[50px] mt-5">  {skill.icon} </p>
                  <p className="py-3 text-black text-[18px] font-bold ">{skill.name}</p>
                 </li>

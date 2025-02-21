@@ -63,7 +63,7 @@ body{
 }
 
 .resume_title{
-    @apply  text-center text-[30px] font-bold ;
+    @apply  text-center text-[30px] font-bold text-primary ;
 }
 .resume_paragraph{
     @apply  max-w-[400px] lg:max-w-[570px] text-center text-wrap text-[20px] leading-[30px] text-gray-400;
