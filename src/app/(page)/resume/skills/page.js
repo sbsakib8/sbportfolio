@@ -6,12 +6,91 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
+import { FaGitSquare } from "react-icons/fa";
 
+// backebd icon
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+
+const Frontend = [
+    { id: 1,
+      name: "HTML",
+     icon: <FaHtml5 />   
+    },
+    { id: 2,
+      name: "CSS",
+     icon: <FaCss3Alt />   
+    },
+    { id: 3,
+      name: "javascript",
+     icon: <IoLogoJavascript />   
+    },
+    { id: 4,
+      name: "SASS",
+     icon: <IoLogoSass />   
+    },
+    { id: 5,
+      name: "Bootstrap",
+     icon: <FaBootstrap />   
+    },
+    { id: 6,
+      name: "TailwindCss",
+     icon: <RiTailwindCssFill />   
+    },
+    { id: 7,
+      name: "React",
+     icon: <FaReact />   
+    },
+    { id: 8,
+      name: "Nextdotjs",
+     icon: <SiNextdotjs />   
+    },
+    { id: 9,
+      name: "FaGitSquare",
+     icon: <FaGitSquare />   
+    },
+
+]
+const Backend = [
+    { id: 1,
+      name: "Nodejs",
+     icon: <FaNodeJs />   
+    },
+    { id: 2,
+      name: "Express",
+     icon: <SiExpress />   
+    },
+    { id: 3,
+      name: "MongoDB",
+     icon: <IoLogoJavascript />   
+    },
+    { id: 4,
+      name: "PostgreSQL",
+     icon: <IoLogoSass />   
+    },
+    { id: 5,
+      name: "Firebase",
+     icon: <FaBootstrap />   
+    },
+    { id: 6,
+      name: "Graphql",
+     icon: <RiTailwindCssFill />   
+    },
+    { id: 7,
+      name: "Restful API",
+     icon: <FaReact />   
+    },
+    { id: 8,
+      name: "Socket.io",
+     icon: <SiNextdotjs />   
+    },
+    
+]
 function Skill() {
   return (
-    <div>
-      <h4>My Skills</h4>
-      <p>lorem
+    <div className=" py-3 px-2 lg:px-7">
+      <h4 className='resume_title'>My Skills</h4>
+      <p className="resume_paragraph">lorem
         ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus,
         lectus sed consectetur porttitor, urna velit bibendum velit, vel
         consectetur neque dolor eu arcu. Sed vel massa quis est faucibus
@@ -20,19 +99,41 @@ function Skill() {
         ligula a ipsum fermentum gravida. Donec at turpis a nisi vestibulum
         aliquet.
       </p>
-{/* skils div */}
-      <div>
-        <h5>Frontend</h5>
-        <ul>
-          <li><FaHtml5/></li>
-          <li><FaCss3Alt/></li>
-          <li><IoLogoSass/></li>
-          <li><FaBootstrap/></li>
-          <li><RiTailwindCssFill/></li>
-          <li><IoLogoJavascript/></li>
-          <li><FaReact/></li>
-          <li><SiNextdotjs/></li>
-          s
+{/* frontend skils div */}
+      <div className="shadow-md shadow-gray-400 py-3 mt-5">
+        <h5 className='resume_title'>Frontend</h5>
+        <ul className=" flex flex-wrap gap-5 px-4 py-3 ">
+          {
+            Frontend.map((skill)=>{
+              return (
+               
+                 <li className=" w-[120px] h-[100px] bg-gray-400 flex justify-center rounded-lg items-center shadow-lgs cursor-pointer  " key={skill.id} >
+                 <p className=" text-[50px]">  {skill.icon} </p>
+                </li>
+              
+              )
+            })
+          }
+          
+        </ul>
+
+      </div>
+{/* backend skils div */}
+      <div className="shadow-md shadow-gray-400 py-3 mt-5">
+        <h5 className='resume_title'>backend</h5>
+        <ul className=" flex flex-wrap gap-5 px-4 py-3 ">
+          {
+            Backend.map((skill)=>{
+              return (
+               
+                 <li className=" w-[120px] h-[100px] bg-gray-400 flex justify-center rounded-lg items-center shadow-lgs cursor-pointer  " key={skill.id} >
+                 <p className=" text-[50px]">  {skill.icon} </p>
+                </li>
+              
+              )
+            })
+          }
+          
         </ul>
 
       </div>
