@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import mypic from "../../../../public/mypic/home.png"
-import Media from '@/component/navber/Media'
-import Link from 'next/link'
+
 import HomeTyping from '@/component/home/HomeTyping'
 import MediaAndButton from '@/component/home/MediaAndButton'
 
