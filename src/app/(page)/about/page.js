@@ -1,3 +1,4 @@
+import AboutTyping from "@/component/about/AboutTyping"
 
 function About() {
 
@@ -6,7 +7,9 @@ function About() {
        <div className="text-center md:text-start space-y-3 md:w-[50%] ">
       <h1 className=" text-[30px] md:text-[40px] text-primary font-bold">About me</h1>
 
-      <h3 className=" font-bold text-[25px] md:text-[28px] leading-[30px]">I am SB Sakib Sarkar<span className="home_title px-2">Web Developer</span></h3>
+      <h3 className=" font-bold text-[25px] md:text-[28px] leading-[30px]">I am SB Sakib Sarkar
+      <AboutTyping/>
+      </h3>
       <p className="text-[18px] text-wrap md:pr-6 lg:mt-18">I have been working in the field of web development since 2023. My passion for programming started when I was a kid. I love to think about the future, and I think programming is the best option in the future. I don't know if my coding is better than everyone else's. But I try my best to write good coding so that everyone will fall in love with my coding. I am now in Dubai. I am working in hotel.</p>
      </div>
 
