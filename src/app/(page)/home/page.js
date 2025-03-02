@@ -28,7 +28,7 @@ function Home() {
         
       </div>
       <div className="home-img">
-        <Image width={500} height={500} src={mypic} alt="home img" />
+        <Image width={500} height={500} src={mypic} alt="home  img" />
       </div>
     </section>
   )
