@@ -73,7 +73,7 @@ const project = [
 function Portfolio() {
   return (
     <div>
-      <h2 className="text-[30px] md:text-[40px] text-primary font-bold ">Portfolio</h2>
+      <h2 className="text-[30px] md:text-[40px] text-primarys font-bold ">Portfolio</h2>
      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5">
       {
         project.map((itme)=>{

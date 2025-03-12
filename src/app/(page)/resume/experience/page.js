@@ -58,8 +58,8 @@ function Experience() {
       <div className=' flex gap-3 flex-wrap mt-6 '>
         {
           experience.map((exp) => (
-            <div key={exp.id} className="py-3 max-w-[300px] md:max-w-[230px] bg-gray-700 px-3 shadow-lgs cursor-pointer hover:skew-6 transition-all duration-200 ">
-              <h4 className="text-lg text-[22px] font-semibold text-primary">{exp.title}</h4>
+            <div key={exp.id} className="py-3 max-w-[300px] md:max-w-[220px] bg-gray-700 px-3 shadow-lgs cursor-pointer hover:skew-6 transition-all duration-200 ">
+              <h4 className="text-lg text-[22px] font-semibold text-primarys">{exp.title}</h4>
               <p className="text-sm font-light">{exp.company}</p>
               <p className="text-sm text-[11px]  font-light">{exp.date}</p>
               <p className="text-sm text-gray-200 font-light">{exp.description}</p>

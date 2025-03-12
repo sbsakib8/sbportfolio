@@ -135,8 +135,9 @@ function Skill() {
             Frontend.map((skill)=>{
               return (
                
-                 <li className=" w-[120px] h-[100px] bg-gray-400 flex justify-center rounded-lg items-center shadow-lgs cursor-pointer  hover:animate-ping transition-all duration-200  " key={skill.id} >
+                 <li className=" w-[120px] h-[100px] bg-gray-400 flex flex-col justify-center rounded-lg items-center shadow-lgs cursor-pointer  hover:animate-ping transition-all duration-200  " key={skill.id} >
                  <p className=" text-[50px]">  {skill.icon} </p>
+                 <p className="py-3 text-black text-[18px] font-bold ">{skill.name}</p>
                 </li>
               
               )
@@ -154,8 +155,9 @@ function Skill() {
             Backend.map((skill)=>{
               return (
                
-                 <li className=" w-[120px] h-[100px] bg-gray-400 flex justify-center rounded-lg items-center shadow-lgs cursor-pointer  hover:animate-ping transition-all duration-200 " key={skill.id} >
+                 <li className=" w-[120px] h-[100px] bg-gray-400 flex flex-col justify-center rounded-lg items-center shadow-lgs cursor-pointer  hover:animate-ping transition-all duration-200 " key={skill.id} >
                  <p className=" text-[50px]">  {skill.icon} </p>
+                 <p className="py-3 text-black text-[18px] font-bold ">{skill.name}</p>
                 </li>
               
               )

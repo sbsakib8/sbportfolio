@@ -11,11 +11,11 @@ function ModalProject({id ,title ,img,description,technologies,repolink,weblink,
       <img className=" w-[350px] lg:w-full h-[300px] object-cover" src={img} alt={title}/>
        </div>
     <div className="max-w-[350px] md:w-full">
-     <h3 className="font-bold  text-[25px] md:text[35px] text-primary">{title}</h3>
+     <h3 className="font-bold  text-[25px] md:text[35px] text-primarys">{title}</h3>
     <p className="py-4 text-[17px] leading-[30px] text-white">{description} </p>
      {/* technologies */}
     <h3 className="font-bold  text-[25px] md:text[35px] text-white">{technologies}</h3>
-    <h3 className="font-bold  text-[25px] md:text[35px] text-primary">why choose me ? </h3>
+    <h3 className="font-bold  text-[25px] md:text[35px] text-primarys">why choose me ? </h3>
     <p>===============================</p>
     <p className="text-[17px] my-1 text-gray-300">✓ {whychooseme1}</p>
     <p className="text-[17px] my-1 text-gray-300">✓ {whychooseme2}</p>

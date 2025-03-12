@@ -9,7 +9,7 @@ function Routers({children}) {
         <p  className="resume_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem incidunt facere dolor dicta illo doloribus, commodi fugit rerum quas error!</p>
       <Button/>
       </div>
-      <div className=" lg:w-[1px] lg:h-screen lg:bg-primary"></div>
+      <div className=" lg:w-[1px] lg:h-screen lg:bg-primarys"></div>
       
     <div className='flex flex-col  items-center shadow-lgs md:mr-9  w-full lg:w-[50%] gap-2 h-[480px] overflow-y-scroll'>
       {children}

@@ -6,7 +6,7 @@ function About() {
   return (
     <div className=" w-full flex flex-col md:flex-row">
        <div className="text-center md:text-start space-y-3 md:w-[50%] ">
-      <h1 className=" text-[30px] md:text-[40px] text-primary font-bold">About me</h1>
+      <h1 className=" text-[30px] md:text-[40px] text-primarys font-bold">About me</h1>
 
       <h3 className=" font-bold text-[25px] md:text-[28px] leading-[30px]">I am SB Sakib Sarkar
       <AboutTyping/>

@@ -9,9 +9,9 @@ function ModalService({id, title, description,can1, can2, can3, can4, can5, can6
       <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-gray-200 ">✕</button>
     </form>
 
-    <h3 className="font-bold  text-[25px] md:text[35px] text-primary">{title}</h3>
+    <h3 className="font-bold  text-[25px] md:text[35px] text-primarys">{title}</h3>
     <p className="py-4 text-[17px] leading-[30px] text-white">{description}</p>
-    <h3 className="text-[29px] font-bold text-primary my-3">**What I can do ---**</h3>
+    <h3 className="text-[29px] font-bold text-primarys my-3">**What I can do ---**</h3>
     <p className="text-[17px] my-1 text-gray-300">- {can1}</p>
     <p className="text-[17px] my-1 text-gray-300">- {can2}</p>
     <p className="text-[17px] my-1 text-gray-300">- {can3}</p>
@@ -19,7 +19,7 @@ function ModalService({id, title, description,can1, can2, can3, can4, can5, can6
     <p className="text-[17px] my-1 text-gray-300">- {can5}</p>
     <p className="text-[17px] my-1 text-gray-300">- {can6}</p>
 
-    <h2 className="text-[29px] font-bold text-primary my-3">**My services include-**</h2>
+    <h2 className="text-[29px] font-bold text-primarys my-3">**My services include-**</h2>
 
     <p className="text-[17px] my-1 text-gray-300">- {myservice1}</p>
     <p className="text-[17px] my-1 text-gray-300">- {myservice2}</p>
@@ -37,7 +37,7 @@ I am always ready to work with you. please contact me before placing an order.
 Thanks!</p>
   </div>
 </dialog>
-<button className="btn bg-primary outline-0  shadow-lgs" onClick={()=>document.getElementById("modal"+id).showModal()}>See more</button>
+<button className="btn bg-primarys rounded-full hover:text-black text-[18px] outline-0  shadow-lgs" onClick={()=>document.getElementById("modal"+id).showModal()}>See more</button>
 </>
   )
 }
