@@ -2,9 +2,43 @@
 
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import Swal from 'sweetalert2'
 
 
 function From() {
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "e01933a5-35bc-4540-840a-805ffd8cb3ce");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+    });
+    const result = await response.json();
+    if (result.success) {
+      formik.resetForm({
+        values: { name: '', email: '' , message: '' , Subject: ''  },
+       
+      });
+        console.log(result);
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent Successfully!",
+          icon: "success"
+        });
+    }
+}
+
 
     const formik = useFormik({
         initialValues: {
@@ -30,19 +64,12 @@ function From() {
              .max(100, 'Subject must not exceed 100 characters')
              .required('Subject is required'),
         }),
-        onSubmit: (values ) => {
-          console.log(values)
-          formik.resetForm({
-            values: { name: '', email: '' , message: '' , Subject: ''  },
-           
-          });
-        },
+        
       });
     
     return (
         <div className='py-10 lg:pt-0 lg:-mt-5 bg-background w-full flex flex-col justify-center items-center '>
-           <form  action=""
-         method="POST" className='w-full lg:ml-26' onSubmit={formik.handleSubmit}>
+           <form   className='w-full lg:ml-26' onSubmit={handleSubmit}>
            <fieldset className="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box">
                 
                 <div className="flex flex-col lg:flex-row gap-5 md:gap-10">

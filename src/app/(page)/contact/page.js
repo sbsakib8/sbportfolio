@@ -33,6 +33,7 @@ function Contact() {
             <MdEmail className="contact_icon text-primarys text-[40px]" />
             <h5 className="text-[20px] font-bold">Email</h5>
             <p>sbsakibsarkar8@gmail.com</p>
+            <p>sakibhossain7397@gmail.com</p>
           </div>
           {/* website div */}
           <div>
