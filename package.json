@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+  "node": "18.x"
+},
+
   "dependencies": {
     "@formspree/react": "^2.5.5",
     "@tailwindcss/postcss": "^4.0.3",
