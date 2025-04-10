@@ -4,7 +4,7 @@ import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 
-function MediaAndButton() {
+function MediahomeButton() {
   return (
     <div>
         <ul className=' media_component'>
@@ -26,4 +26,4 @@ function MediaAndButton() {
   )
 }
 
-export default MediaAndButton
+export default MediahomeButton
