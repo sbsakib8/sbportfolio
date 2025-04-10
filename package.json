@@ -12,10 +12,9 @@
     "node": "18.x"
   },
   "dependencies": {
-    "@formspree/react": "^2.5.5",
     "@tailwindcss/postcss": "^4.0.3",
     "formik": "^2.4.6",
-    "next": "15.1.6",
+    "next": "^15.3.0",
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
